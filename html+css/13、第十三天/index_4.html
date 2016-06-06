@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        *{margin: 0;padding: 0;}
+        ul{margin: 0 auto;
+        width: 600px;
+            list-style: none;
+        }
+        ul li{
+            height: 40px;
+            border-top: 1px solid #000;
+        }
+        ul li .p1{
+            height: 40px;
+            line-height: 40px;
+        }
+        ul li .p2{
+            height: 80px;
+            display: none;
+            background: #cccccc;
+        }
+        ul li:hover .p1{
+            display: none;
+        }
+        ul li:hover .p2{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>
+            <p class="p1">我是默认显示的那个盒子</p>
+            <p class="p2">我是隐藏的盒子</p>
+        </li>
+        <li>
+            <p class="p1">我是默认显示的那个盒子</p>
+            <p class="p2">我是隐藏的盒子</p>
+        </li>
+        <li>
+            <p class="p1">我是默认显示的那个盒子</p>
+            <p class="p2">我是隐藏的盒子</p>
+        </li>
+        <li>
+            <p class="p1">我是默认显示的那个盒子</p>
+            <p class="p2">我是隐藏的盒子</p>
+        </li>
+        <li>
+            <p class="p1">我是默认显示的那个盒子</p>
+            <p class="p2">我是隐藏的盒子</p>
+        </li>
+    </ul>
+</body>
+</html>

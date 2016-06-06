@@ -1,0 +1,264 @@
+body,div,ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,p,a,img,span,b,i,em,strong,form,input,select,option,label,textarea,table,thead,tbody,tfoot,tr,th,td,sup,sub,s,u{
+    margin: 0;
+    padding: 0;
+    /*height: 0;*/
+    font-family: "微软雅黑" , "Microsoft Yahei", Arial, "宋体";
+    font-size: 12px;
+    /*请不要再这个位置设置行高*/
+}
+ul,ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+img,input{
+    border: none;
+    vertical-align: middle;
+}
+.clear{
+    clear: both;
+    height: 0;
+    line-height: 0;
+    font-size: 0;
+}
+.w960{
+    margin: 0 auto;
+    width: 960px;
+}
+/*全局默认样式的重置*/
+.header{
+    width: 100%;
+    height: 168px;
+}
+.header .headTop{
+    /*margin-left: 220px;*/
+    padding-top: 34px;
+    height: 85px;
+    background: #cccccc;
+}
+.header .headTop h1{
+    padding-right: 16px;
+    /*margin 1、上下排列的时候 谁大取谁 2、浮动的元素 margin左右的时候 ie6会出现双边距问题 3、父子关系的元素 出现margin-top传递的问题*/
+    /*当padding 和 margin 的效果一样的时候 我们使用padding -- 为了避免一些兼容性问题*/
+    float: left;
+}
+.header .headTop .sub{
+    float: left;
+}
+.header .headTop .sub h3{
+    font-size: 24px;
+    line-height: 24px;
+    color: #fa8100;
+    font-weight: 500;
+    /*100-900  500是正常 900加粗*/
+}
+.header .headTop .sub h4{
+    font-size: 14px;
+    line-height: 24px;
+    color: #666;
+    font-weight: 500;
+}
+.header .headTop .tel{
+    font-size: 0;
+    /*可以解决行内元素或者行内块级元素 中间空格影响的位置关系*/
+    /*padding-right: 11px;*/
+    float: right;
+}
+.header .headTop .tel img{
+    padding-right: 12px;
+}
+.header .nav{
+    width: 100%;
+    height: 49px;
+    background: #00659c;
+}
+.header .nav ul{
+    position: relative;
+}
+.header .nav ul li{
+    /*position: relative;*/
+    float: left;
+    margin-left: 1px;
+    padding: 0 32px;
+    line-height: 49px;
+}
+/*.header .nav ul .line{
+    margin-top: 14px;
+    float: left;
+    color: #FFFFFF;
+    padding: 0;
+    width: 1px;
+    height: 13px;
+    background: #FFFFFF;
+}*/
+.header .nav ul li:before{
+    display: inline-block;
+    position: relative;
+    top: 0px;
+    left: -33px;
+    /*float: left;*/
+    width: 1px;
+    height: 13px;
+    background: #fff;
+    content: "";
+    vertical-align: middle;
+    /*使用这种伪类 content 是必须给的*/
+}
+.header .nav ul li a{
+    font-size: 14px;
+    color: #fff;
+}
+.header .nav ul .noBg:before{
+    width: 0;
+}
+.header .nav .subNav{
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 49px;
+    /*margin: 0 auto;*/
+    width: 956px;
+    height: 243px;
+    background: #FFFFFF;
+    box-shadow: 1px 1px 3px rgba(0,0,0,.5);
+    /*border: 1px solid #000;*/
+    /*border-radius: 5px;*/
+    /*border-bottom-left-radius: 5px;*/
+    /*border-bottom-right-radius: 5px;*/
+    border-radius: 1px 0 100px 5px;
+    /*上  右  下  左*/
+}
+.header .nav li:hover{
+
+    background: red;
+}
+.header .nav li:hover .subNav{
+    display: block;
+}
+/*header end*/
+.banner{
+    width: 100%;
+    height: 480px;
+    background: url("../images/index_m_bg.png");
+}
+.banner .conBan{
+    overflow: hidden;
+    background: url("../images/t.png") no-repeat;
+    height: 480px;
+}
+.banner .conBan ul{
+    padding-top: 297px;
+    width: 1005px;
+}
+.banner .conBan ul li{
+    float: left;
+    padding: 0 20px;
+    width: 251px;
+    height: 110px;
+    margin-right: 44px;
+    background: rgba(255,255,255,.6);
+}
+.banner .conBan ul li h5{
+    padding: 14px 0 10px;
+    border-bottom: 1px solid #e0e0e0;
+    text-align: center;
+    color: #888888;
+    font-size: 24px;
+    line-height: 24px;
+}
+.banner .conBan ul li p{
+    border-top: 1px solid #f8f8f8;
+    padding: 0 20px;
+    font-size: 12px;
+    line-height: 20px;
+    color: #bababa;
+    text-align: center;
+}
+.banner .conBan ul li.on{
+    background: rgba(0,101,156,.9);
+}
+.banner .conBan ul li.on h5,.banner .conBan ul li.on p{
+    color: #FFFFFF;
+}
+.banner .conBan ul li.on h5{
+    border-bottom: 1px solid #00629a;
+}
+.banner .conBan ul li.on p{
+    border-top: 1px solid #247baa;
+}
+/*banner end*/
+.conList{
+    width: 100%;
+    height: 270px;
+    background: #000;
+}
+.conList ul{
+    width: 996px;
+    margin-left: -36px;
+}
+.conList ul li{
+    float: left;
+    width: 213px;
+    height: 253px;
+    margin-left: 36px;
+    background: #fff;
+}
+.conList ul li h4{
+    padding-top: 26px;
+    font-size: 20px;
+    color: #333;
+    text-align: center;
+}
+.conList ul li .text{
+    color: #999;
+    text-align: center;
+}
+.conList ul li .img{
+    height: 163px;
+    background: url("../images/list_bg.png") no-repeat #006eaa;
+}
+.conList ul li .img1{
+    background-position: 74px 59px;
+}
+.conList ul li .img:hover{
+    background-color: #08afb1;
+}
+.conList ul li .img2{
+    background-position: -137px 59px;
+}
+
+.conList ul li .img3{
+    background-position: -380px 59px;
+}
+
+.conList ul li .img4{
+    background-position: -636px 59px;
+}
+.conList .w960{
+    position: relative;
+    top: -26px;
+    /*margin-top: -26px;*/
+}
+.conList .btnL,.conList .btnR{
+    position: absolute;
+    width: 21px;
+    height: 42px;
+    background: url("../images/icon.png") no-repeat;
+}
+.conList .btnL{
+    top: 108px;
+    left: -81px;
+    background-position: 0 -222px;
+}
+.conList .btnL:hover{
+    background-position: 0 -176px;
+}
+.conList .btnR{
+    top: 108px;
+    right: -81px;
+    background-position: -21px -222px;
+}
+.conList .btnR:hover{
+    background-position: -21px -176px;
+}

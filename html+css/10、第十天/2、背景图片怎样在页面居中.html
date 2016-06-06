@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+        body,div,p{margin: 0;padding: 0;}
+        /*div{
+            width: 100%;
+            /!*width:100% 这是可视窗口的宽度 随着可视窗口的大小变化 永远不会出现横向的滚动条*!/
+            height: 448px;
+            background-image: url("banner1.jpg");
+            background-repeat: no-repeat;
+            /!*background-size: 1366px;*!/
+            background-position: center;
+            background-color: #1eb07f;
+            /!*引入1920*448 的图片 1920 已经超过电脑的分辨率 背景图片的最左侧和浏览器的最左侧 重合 图片以最左侧开始显示 主体内容部分 就会偏右 甚至会将主体内容淹没在浏览器的右侧 *!/
+            /!**!/
+        }*/
+        div{
+            width: 100%;
+            height: 600px;
+            /*background: url("bg.jpg");*/
+            /*background-image: url("banner1_1.jpg");
+            background-repeat: no-repeat;
+            background-position: top center;
+            background-color: #1eb07f;*/
+            /*background: url("banner1_1.jpg") no-repeat top center #1eb07f;*/
+        }
+        /*p{
+           width: 960px;
+            height: 480px;
+            margin: 0 auto;
+        }*/
+    </style>
+</head>
+<body>
+    <div>
+        <img src="banner1.jpg" alt=""/>
+
+        <p>
+            <!--<img src="960p.jpg" alt=""/>-->
+        </p>
+    </div>
+
+大图平铺在整个页面的时候，我们选择使用background属性来进行图片的添加，那我们说这种图片是经常替换的，需要使用html文件来引入，所以放在css文件中，html没有办法直接进行图片的引入，所以我们在遇到这种情况的时候，需要将这段代码放置到html文件中（放在head标签中的，style标签中【内嵌式】）
+
+或者使用js 将图片的引入直接添加到行内 【行内式】
+
+
+
+
+</body>
+</html>

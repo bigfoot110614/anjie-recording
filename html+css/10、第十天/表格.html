@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        th{width: 200px;}
+        table{background: #005ea7;}
+        th,td{background: #FFFFFF;}
+        /*border 设置成1
+            1、border 设置0
+            2、cellspacing设置1
+            3、table的背景颜色 bgcolor 错误 应在在css中进行table的颜色设置
+            4、单元格的背景颜色
+        */
+    </style>
+    <!--
+        caption 会自动在table中进行居中
+        th的内容 会自动居中 并且加粗
+        td的宽度会根据th来进行调整 也就是th多宽 td就多宽 td的内容 默认左对齐 文字不加粗
+    -->
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="1" bgcolor="#d2691e">
+    <!--
+    cellpadding 单元格内容和单元格边框之间的距离 一般我们设置成0
+    cellpadding是四个方向都设置成同一的值 我们在进行单元格内容和border之间距离控制的时候 选择使用css属性中的padding 而不去使用cellpadding 这样既可以设置四个方向不同的值 也可以减少html的代码量
+
+    cellspacing 单元格和单元格之间的距离
+    -->
+    <caption>
+        表格标题
+    </caption>
+
+    <thead>
+        <!-- 表头 -->
+        <tr>
+            <!-- 行 -->
+            <th>
+                表头的单元格
+            </th>
+            <th>
+                表头的单元格
+            </th>
+            <th>
+                表头的单元格
+            </th>
+            <th>
+                表头的单元格
+            </th>
+        </tr>
+    </thead>
+    <tfoot>
+        <!-- 表尾 基本不用 -->
+        <!-- 1、维护方便 直接可以看到尾部信息 -->
+        <!-- 2、提前加载 防止 tbody 过多 导致底部信息 加载缓慢 -->
+        <!-- thead 和 tfoot 在一个table中只能有一个 tbody 是可以有多个 -->
+        <tr>
+            <td>表尾单元格</td>
+            <td>表尾单元格</td>
+            <td>表尾单元格</td>
+            <td>表尾单元格</td>
+        </tr>
+    </tfoot>
+    <tbody>
+        <!-- 表身 -->
+        <!-- rowspan 合并行-->
+        <tr>
+            <td rowspan="2">
+                普通单元格
+            </td>
+            <td>
+                普通单元格
+            </td>
+            <td>
+                普通单元格
+            </td>
+            <td>
+                普通单元格
+            </td>
+        </tr>
+        <tr>
+            <!--<td>-->
+                <!--普通单元格-->
+            <!--</td>-->
+            <td>
+                普通单元格
+            </td>
+            <td>
+                普通单元格
+            </td>
+            <td>
+                普通单元格
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3">
+                普通单元格
+            </td>
+            <!--<td>-->
+                <!--普通单元格-->
+            <!--</td>-->
+            <!--<td>-->
+                <!--普通单元格-->
+            <!--</td>-->
+            <td>
+                普通单元格
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+</body>
+</html>

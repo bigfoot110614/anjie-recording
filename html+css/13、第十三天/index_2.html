@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        ul{
+            list-style: none;
+        }
+        img{border: none;vertical-align: middle;}
+        .box{
+            margin: 30px auto;
+            width: 140px;
+            height: 165px;
+        }
+        .box dl{
+            position: relative;
+        }
+        .box dl dt img{
+            width: 140px;
+            height: 140px;
+        }
+        .box dl dd{
+            padding: 0 5px;
+            height: 25px;
+            line-height: 25px;
+            font-size: 12px;
+            background: #c4c2c8;
+            color: #999;
+        }
+        .hidden{
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 140px;
+            height: 140px;
+            background: rgba(0,0,0,.6);
+        }
+        .hidden .btn_xin{
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            border: 1px solid #000;
+            border-radius: 3px;
+            padding-left: 2px;
+            width: 28px;
+            height: 14px;
+            background: #fff;
+            font-size: 0;
+        }
+        .hidden .btn_xin i,.hidden .btn_xin b{
+            display: inline-block;
+            width: 14px;
+            height: 14px;
+            background: url("images/icon.png") no-repeat;
+        }
+        .hidden .btn_xin i{
+            background-position: -5px -125px;
+        }
+        .hidden .btn_xin b{
+            background-position: -150px -53px;
+        }
+        .hidden .play{
+            position: absolute;
+            bottom: 5px;
+            right: 5px;
+            width: 24px;
+            height: 24px;
+            background: url("images/play_icon.png") no-repeat;
+            background-position: 0 -48px;
+        }
+        .hidden .play:hover{
+            background-position: -24px -48px;
+        }
+        .hidden .btn_xin ul{
+            display: none;
+            position: absolute;
+            top: -1px;
+            left: -1px;
+            border: 1px solid #000;
+            border-radius: 3px;
+            padding: 5px 0;
+            width: 85px;
+            height: 100px;
+            background: #fff;
+        }
+        .hidden .btn_xin ul li a{
+            display: block;
+            padding-left: 10px;
+            height: 25px;
+            line-height: 25px;
+            color: #333333;
+            font-size: 12px;
+            text-decoration: none;
+        }
+        .hidden .btn_xin ul li a em{
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            background: url("images/icon.png") no-repeat;
+            vertical-align: middle;
+        }
+        .hidden .btn_xin ul .list1 a em{
+            background-position: 0px -120px;
+        }
+        .hidden .btn_xin ul .list2 a em{
+            background-position: -72px -120px;
+        }
+        .hidden .btn_xin ul .list3 a em{
+            background-position: -24px -120px;
+        }
+        .hidden .btn_xin ul .list4 a em{
+            background-position: -48px -120px;
+        }
+        .hidden .btn_xin ul .list1 a:hover em{
+            background-position: 0px -144px;
+        }
+        .hidden .btn_xin ul .list2 a:hover em{
+            background-position: -72px -144px;
+        }
+        .hidden .btn_xin ul .list3 a:hover em{
+            background-position: -24px -144px;
+        }
+        .hidden .btn_xin ul .list4 a:hover em{
+            background-position: -48px -144px;
+        }
+        .hidden .btn_xin ul li a:hover{
+            background: #f60;
+            color: #fff;
+        }
+        .box dl dt:hover .hidden,.hidden .btn_xin:hover ul{
+            display: block;
+        }
+        /*.hidden .btn_xin:hover ul{
+            display: block;
+        }*/
+        .box dl dd .hover{
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 140px;
+            height: 165px;
+            background: rgba(0,0,0,.6);
+        }
+        .box dl dd .hover .text{
+            padding: 30px 20px 15px;
+            font-size: 12px;
+            color: #fff;
+            line-height: 14px;
+        }
+        .box dl dd .hover .btn{
+            margin: 0 auto;
+            border-radius: 3px;
+            width: 68px;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            background: #999;
+            color: #fff;
+        }
+        .box dl dd .hover .btn:hover{
+            background: #888888;
+        }
+        .box dl dd:hover{
+            color: #c4c2c8;
+        }
+        .box dl dd:hover .hover{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+    <dl>
+        <dt>
+            <!--dt:hover xxx{d:b;}-->
+            <img src="images/pic_2.jpg" alt=""/>
+            <div class="hidden">
+                <div class="btn_xin">
+                    <i></i>
+                    <b></b>
+                    <ul>
+                        <li class="list1"><a href="javascript:;"><em></em>收藏</a></li>
+                        <li class="list2"><a href="javascript:;"><em></em>发送到</a></li>
+                        <li class="list3"><a href="javascript:;"><em></em>添加到</a></li>
+                        <li class="list4"><a href="javascript:;"><em></em>分享到</a></li>
+                    </ul>
+                </div>
+                <a href="javascript:;" class="play"></a>
+            </div>
+        </dt>
+        <dd>
+            基于最近流行为你推荐
+            <div class="hover">
+                <p class="text">基于最近流行为你推荐</p>
+                <p class="btn">不感兴趣</p>
+            </div>
+        </dd>
+    </dl>
+</div>
+</body>
+</html>

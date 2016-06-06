@@ -1,0 +1,87 @@
+body,div,ul,ol,li,p,span,a,form,input,img,label,i,em,b{
+     margin: 0;padding: 0;
+     font-family: "微软雅黑" , "Microsoft Yahei", Arial, "宋体";
+     font-size: 14px;
+ }
+ul,ol{list-style: none;}
+a{text-decoration: none;}
+/*input,img{border: none;vertical-align: middle;}*/
+.clear{clear: both;height: 0;line-height: 0;font-size: 0;}
+
+body{background: #9b9b9b;}
+.login{
+    margin: 80px auto;
+    width: 460px;
+    height: 498px;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 10px rgba(0,0,0,.4);
+}
+.login .title{
+    height: 62px;line-height: 62px;/*font-size: 16px; 0.1*/
+}
+.login .title a{
+    /*font-size: 16px; 继承 0.1*/
+    /*font-size: 14px; 继承 1*/
+    display: block;
+    float: left;
+    width: 230px;
+    color: #616161;
+    text-align: center;
+    font-size: 16px;
+    background: #ccc;
+}
+.login .title .active{background: #FFFFFF;}
+.login_form{
+    padding: 20px 60px 30px;
+}
+.login_form p{
+    padding-top: 15px;
+}
+.login_form p label{
+    line-height: 30px;
+    font-weight: 900;
+    color: #616161;
+}
+.login_form p input{
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding-left: 10px;
+    width: 328px;
+    height: 38px;
+}
+.login_form input[type=button]{
+    margin-top: 20px;
+    border: 1px solid #608926;
+    border-radius: 3px;
+    width: 338px;
+    height: 38px;
+    background: #7cb132;
+    color: #FFFFFF;
+}
+.login_form input[type=button]:hover{
+    background: #608926;
+    /*transition: all 0.5s linear 0s;*/
+}
+.qq{
+    /*overflow: hidden;*/
+    margin: 0 auto;
+    border-bottom: 1px solid #cccccc;
+    width: 340px;
+    height: 17px;
+}
+.qq a{
+    display: block;
+    margin: 0 auto;
+    width: 72px;height: 35px;
+    background: url("../login_qq.jpg") no-repeat;
+}
+.qq a:hover{
+    background: url("../login_qq_hover.jpg") no-repeat;
+    transition: background 0.5s linear 0s;
+}
+
+
+
+
+
+
